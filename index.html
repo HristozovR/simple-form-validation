@@ -4,9 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb9f1f9c94.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <title>Document</title>
+    <title>Simple Form Validation</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <div class="field-name">
+        <i class="fas fa-user"></i>
+        <input type="name" placeholder="Username" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-email inactive">
+        <i class="fas fa-at"></i>
+        <input type="email" placeholder="Email" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-password inactive">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-finish inactive">
+        <i class="fas fa-heart"></i>
+        <p>You registered successfully!</p>
+        <i class="fas fa-thumbs-up"></i>
+      </div>
+    </form>
+  </body>
 </html>
